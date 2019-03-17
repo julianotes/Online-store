@@ -1,0 +1,377 @@
+$orange:#f54732;
+$blue:#142558;
+$dark: #a1a8bd;
+$light: #e3e8f0;
+$borders: #f0f2f7;
+$head-link: #343e5c;
+$foo:#222328;
+
+main {
+  min-height: calc(100vh - 111px); // прибить футер-дается на предыдущий блок
+}
+
+.cart-header {
+  background-color: #fff;
+}
+
+.cart-header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+//============================tel===========================
+
+.header-phone {
+  margin-left: 66px;
+}
+
+.header-phone__img .cls-1 {
+  &:hover {
+    cursor: pointer;
+    fill: $orange;
+  }
+}
+
+.header-phone__text {
+  margin-left: 5px;
+}
+
+.header-phone__link {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $head-link;
+
+
+
+  &:hover {
+    color: $orange;
+    transition: all .3s ease-in-out;
+  }
+}
+
+
+//========================================================main==content===============================================
+
+.basket-container {
+  width: 869px;
+  margin: 0 auto;
+}
+
+.basket-wrap {
+  margin-top: 58px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.basket-title {
+  height: 107px;
+}
+
+.basket-title-h1 {
+  display: block;
+  color: $blue;
+  font-size: 36px;
+  font-weight: 700;
+  padding: 36px 0 31px 46px;
+}
+
+//===============товар===========================
+
+
+.basket-item-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.basket-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 784px;
+  border-top: 1px solid #f0f2f7;
+}
+
+.basket-item-left-holder {
+  display: flex;
+  align-items: center;
+}
+
+.basket-item-text-holder {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 20px;
+}
+
+.basket-item-text__title {
+  color: $blue;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.basket-item-text__key {
+  color: $dark;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.basket-item-right-holder {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 356px;
+}
+
+.basket-item-price {
+  color: $blue;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  margin-right: 47px;
+}
+
+.basket-item-total-price-holder {
+  color: $blue;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  margin-right: 27px;
+
+}
+
+
+.basket-item-change {
+  display: flex;
+  align-items: center;
+  margin-right: 38px;
+
+}
+
+.cross-input {
+  display: block;
+  width: 46px;
+  height: 36px;
+  padding-left: 13px;
+  border-radius: 3px;
+  border: 2px solid #e3e8f0;
+}
+
+.cross-button-right,
+.cross-button-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:active {
+    opacity: .9;
+  }
+}
+
+.cross-button-left {
+  margin-right: 10px;
+}
+
+.cross-button-right {
+  margin-left: 10px;
+}
+
+.basket-item-cross-button {
+  cursor: pointer;
+}
+
+
+
+//================товары===================
+//================итого=====================
+.basket-total-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 93px;
+  background-color: #e3eaef;
+  border-radius: 0 0 5px 5px;
+}
+
+.basket-total-price-container {
+  display: flex;
+  justify-content: space-between;
+  width: 799px;
+}
+
+.basket-total-price-qt {
+  color: #79848f;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 25px;
+}
+
+.basket-total-price-info {
+  width: 202px;
+}
+
+.basket-word,
+.basket-in-total {
+  color: #142558;
+  font-family: "PT Root UI";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.basket-word {
+  padding-right: 5px;
+}
+
+
+
+
+//=======================оформление заказа======================
+
+.checkout {
+  width: 871px;
+  height: 872px;
+  margin-top: 37px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+//---------------------форма-----------------------
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+  width: 449px;
+  margin-left: 45px;
+
+  input,
+  textarea {
+    border-radius: 3px;
+    border: 2px solid #e3e8f0;
+    background-color: #ffffff;
+    color: $dark;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-left: 15px;
+  }
+  input {
+    margin-bottom: 24px;
+    height: 44px;
+  }
+  textarea {
+    height: 111px;
+    margin-bottom: 32px;
+    padding-top: 7px;
+  }
+}
+
+.adress-details {
+  display: flex;
+
+  .quarters,
+  .floor,
+  .entrance  {
+    width: 100px;
+    margin-right: 19px;
+  }
+}
+
+.form-title {
+  color: $blue;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 41px 0 22px 0;
+}
+
+.form-subtitle {
+  color: $blue;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+//=================кнопка=================
+.form-button { 
+  width: 449px;
+  height: 56px;
+  margin-top: 11px;
+  border-radius: 5px;
+  background-color: #f24841;
+  color: #fff;
+  font-family: "PT Root UI";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  cursor: pointer;
+
+  &:hover {
+     &:hover {
+       background-color: lighten($orange, 5%);
+
+     }
+
+     &:active {
+       background-color: darken($orange, 10%);
+     }
+  }
+}
+
+
+
+
+
+
+//===================================footer=====================
+
+
+.cart-footer {
+  margin-top: 100px;
+  background-color: $foo;
+}
+
+.cart-footer-wrap {
+  display: flex;
+  align-items: center;
+  height: 111px;
+}
+
+.footer-phone {
+  margin-left: auto;
+}
+
+.footer-phone__img .cls-1 {
+  &:hover {
+    cursor: pointer;
+    fill: #fff;
+  }
+}
+
+.footer-phone__text {
+  margin-left: 5px;
+
+}
+
+.footer-phone__link {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $dark;
+
+  &:hover {
+    color: #fff;
+    transition: all .3s ease-in-out;
+  }
+}
+
+.copiright {
+  margin-left: 73px;
+  color: $dark;
+  font-size: 14px;
+  font-weight: 400;
+}

@@ -1,0 +1,273 @@
+//-----------------------------------------хлебные крошки---------------------------------
+$orange:#f54732;
+$blue:#142558;
+$dark: #a1a8bd;
+$light: #e3e8f0;
+$borders: #f0f2f7;
+$head-link: #343e5c;
+$foo:#222328;
+
+.item-look-wrap {
+  height: 924px;  
+}
+
+.main-footer {
+  margin-top: 116px;
+}
+
+
+.breadcrumbs-wrap {
+  height: 67px;
+  display: flex;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-link {
+  display: block;
+  color: #828aa2;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.breadcrumb-link:visited,
+.breadcrumb-link:focus {
+  color: #828aa2;
+}
+
+.breadcrumb-last {
+  display: block;
+  color: #142558;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.breadcrumb-link:after {
+  padding-right: .5rem;
+  padding-left: .4rem;
+  position: relative;
+  content: url('../img/icons/arrow-bread.svg');
+}
+
+.current-page {
+  color: $blue;
+  font-size: 14px;
+  font-weight: 400;
+
+}
+
+//========================================сам товар======================
+
+.item-look-wrap {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.top-desc {
+  display: flex;
+  justify-content: space-between;
+  height: 473px;
+  padding-top: 12px;
+}
+
+.goods-preview {
+  display: flex;
+}
+
+.goods-preview-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 25px 0 54px;
+}
+
+.shevron-prev,
+.shevron-next {
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  padding: 0 0 10px 0;
+
+  .cls-3:hover {
+    fill: $orange;
+  }
+}
+
+.goods-prev {
+  height: 65px;
+  width: 65px;
+  margin: 5px 0 5px 0;
+  border: 2px solid transparent;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
+    border: 2px solid $light;
+  }
+
+  &:active {
+    opacity: .9;
+  }
+
+  .goods-prev__img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+//=====================главная картинка====================
+.goods-image-holder {
+  height: 473px;
+}
+
+//===========================================ценик описание===========================
+
+
+.price-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+
+}
+
+.price-title {
+  margin-top: 34px;
+  color: $blue;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.price-key {
+  margin-top: 9px;
+  color: $dark;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.price-status {
+  margin-top: 10px;
+  opacity: 0.77;
+  color: #142558;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.svg--dot:active,
+.svg--dot:hover {
+  cursor: pointer;
+  fill: $dark;
+}
+
+//================================блок с ценой===========================
+.price-holder {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: 230px;
+  margin-top: 32px;
+  border-radius: 10px;
+  background-color: #f5f8fa;
+}
+
+.price-qt-holder {
+  display: flex;
+  margin-top: 27px;
+
+  .price-self {
+    color: $blue;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 21px;
+    margin: 11px 0 0 27px;
+  }
+
+  .cross-input {
+    display: block;
+    width: 46px;
+    height: 36px;
+    padding-left: 15px;
+    border-radius: 3px;
+    border: 2px solid #e3e8f0;
+  }
+
+  .change-holder {
+    display: flex;
+    margin-left: 64px;
+  }
+
+  .cross-button-right,
+  .cross-button-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:active {
+      opacity: .9;
+    }
+  }
+
+  .cross-button-left {
+    margin-right: 10px;
+  }
+
+  .cross-button-right {
+    margin-left: 10px;
+  }
+
+}
+
+.price-button {
+  width: 315px;
+  height: 51px;
+  margin: 32px 0 0 27px;
+  border-radius: 5px;
+  background-color: #f24841;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: lighten($orange, 5%);
+
+  }
+  &:active {
+    background-color: darken($orange, 10%);
+  }
+}
+
+//===============доставка==================
+.price-delivery {
+  display: flex;
+  align-items: center;
+   margin: 21px 0 0 27px;
+  color: #848ca4;
+  font-size: 16px;
+  font-weight: 400;
+
+  &__text {
+    padding: 0 0 5px 9px;
+  }
+}
+
+
+//==============================================описание====================================================
+
+.bottom-desc {
+  margin-top:43px ;
+  margin-left: 199px;  
+  
+  .desc-subtitle {
+    padding: 8px 100px 40px 0;   
+    color: #828aa2;    
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;   
+  }
+
+}
